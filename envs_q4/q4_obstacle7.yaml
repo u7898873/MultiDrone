@@ -48,12 +48,6 @@ obstacles:
     rotation: [0, 0, 0]
     color: green
 
-  # - type: box
-  #   position: [46, 25, 34.75]  
-  #   size: [4, 50, 30]
-  #   rotation: [0, 0, 0]
-  #   color: pink
-
 goals:
   - position: [49, 5, 20]
     radius: 1.0

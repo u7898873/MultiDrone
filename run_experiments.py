@@ -25,7 +25,6 @@ def mean_ci_95(xs: List[float]):
 
 
 def run_env(env_yaml: str, runs: int, step_size: float, time_limit: float, goal_sample_rate: float, seed: Optional[int]) -> Dict[str, Any]:
-    # Infer number of drones
     with open(env_yaml, "r") as f:
         cfg_yaml = yaml.safe_load(f)
     num_drones = len(cfg_yaml["initial_configuration"])
@@ -49,7 +48,6 @@ def run_env(env_yaml: str, runs: int, step_size: float, time_limit: float, goal_
             times.append(info["time"])
             lengths.append(info["path_length"])
         else:
-            # record time spent even on failure to understand difficulty
             times.append(info["time"])
             lengths.append(float("nan"))
         iters_list.append(info["iters"])
@@ -57,7 +55,6 @@ def run_env(env_yaml: str, runs: int, step_size: float, time_limit: float, goal_
 
     success_rate = successes / runs if runs > 0 else 0.0
     time_mean, time_ci = mean_ci_95([t for t in times if not math.isnan(t)])
-    # compute mean on path length for successful runs only
     succ_lengths = [l for l in lengths if not math.isnan(l)]
     length_mean, length_ci = mean_ci_95(succ_lengths) if len(succ_lengths) > 0 else (float("nan"), (float("nan"), float("nan")))
     iters_mean, iters_ci = mean_ci_95(iters_list)
@@ -93,7 +90,6 @@ def main():
         print(res)
         rows.append(res)
 
-    # Save CSV
     import csv
     fieldnames = list(rows[0].keys()) if rows else []
     with open(args.csv_out, "w", newline="") as f:
