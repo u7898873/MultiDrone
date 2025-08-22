@@ -5,17 +5,17 @@ bounds:
 
 initial_configuration:
   - [2, 40, 2]
-  - [4, 42, 2]
-  - [6, 44, 2]
-  - [8, 48, 2]
-  - [2, 30, 40]
-  - [4, 30, 40]
-  - [6, 30, 40]
-  - [2, 2, 40]
-  - [2, 2, 2]
-  - [2, 2, 10]
-  - [2, 2, 20]
-  - [2, 2, 30]
+  # - [4, 42, 2]
+  # - [6, 44, 2]
+  # - [8, 48, 2]
+  # - [2, 30, 40]
+  # - [4, 30, 40]
+  # - [6, 30, 40]
+  # - [2, 2, 40]
+  # - [2, 2, 2]
+  # - [2, 2, 10]
+  # - [2, 2, 20]
+  # - [2, 2, 30]
 
 obstacles:
   # # 1) bottom sphere (red) — moved left & down in Y to avoid #2
@@ -78,25 +78,25 @@ obstacles:
 goals:
   - position: [49, 5, 20]
     radius: 1.0
-  - position: [49, 10, 20]
-    radius: 1.0
-  - position: [49, 15, 25]
-    radius: 1.0
-  - position: [49, 20, 25]
-    radius: 1.0
-  - position: [49, 25, 40]
-    radius: 1.0
-  - position: [49, 30, 49]
-    radius: 1.0
-  - position: [49, 35, 35]
-    radius: 1.0
-  - position: [49, 40, 35]
-    radius: 1.0
-  - position: [49, 10, 10]
-    radius: 1.0
-  - position: [49, 20, 10]
-    radius: 1.0
-  - position: [49, 30, 10]
-    radius: 1.0
-  - position: [49, 40, 10]
-    radius: 1.0
+  # - position: [49, 10, 20]
+  #   radius: 1.0
+  # - position: [49, 15, 25]
+  #   radius: 1.0
+  # - position: [49, 20, 25]
+  #   radius: 1.0
+  # - position: [49, 25, 40]
+  #   radius: 1.0
+  # - position: [49, 30, 49]
+  #   radius: 1.0
+  # - position: [49, 35, 35]
+  #   radius: 1.0
+  # - position: [49, 40, 35]
+  #   radius: 1.0
+  # - position: [49, 10, 10]
+  #   radius: 1.0
+  # - position: [49, 20, 10]
+  #   radius: 1.0
+  # - position: [49, 30, 10]
+  #   radius: 1.0
+  # - position: [49, 40, 10]
+  #   radius: 1.0
